@@ -1,13 +1,15 @@
-
-import './App.css'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './App.css';
+import HomePage from './components/HomePage.tsx/HomePage';
 
 function App() {
-
   return (
-    <>
-      <h1>Portafolio 2025</h1>
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
