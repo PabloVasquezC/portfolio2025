@@ -12,7 +12,7 @@ const navigation = [
   { name: 'Formación', href: '/studies', current: false },
 ]
 
-function classNames(...classes) {
+function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
 }
 
@@ -91,10 +91,10 @@ export default function NavBar() {
         as={NavLink}
         to={item.href}
         aria-current={item.current ? 'page' : undefined}
-        className={({ isActive }) => 
+        className={({ isActive }: { isActive: boolean }) => 
           classNames(
-            isActive ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-            'block rounded-md px-3 py-2 text-base font-medium'
+        isActive ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+        'block rounded-md px-3 py-2 text-base font-medium'
           )
         }
       >
