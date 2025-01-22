@@ -1,5 +1,5 @@
 
-export default function ProjectsPage() {
+export default function ProjectsSection() {
     return (
         <div className="">
             <div className='flex justify-center items-center h-screen'>
