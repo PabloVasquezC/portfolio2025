@@ -3,13 +3,13 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Link, NavLink } from 'react-router-dom';
 import './NavBar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faUser } from '@fortawesome/free-solid-svg-icons'
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { faHome } from '@fortawesome/free-solid-svg-icons'
+
 
 const navigation = [
   { name: 'Inicio', href: '/', current: true },
-  { name: 'Proyectos', href: '/projectsPage', current: false },
-  { name: 'Formación', href: '/studies', current: false },
+  { name: 'Proyectos', href: '/projects', current: false },
+  { name: 'Formación', href: '/education', current: false },
 ]
 
 function classNames(...classes: string[]) {
@@ -18,7 +18,7 @@ function classNames(...classes: string[]) {
 
 export default function NavBar() {
   return (
-    <Disclosure as="nav" className="bg-gray-800 w-full navbar flex h-14">
+    <Disclosure as="nav" className="w-full navbar flex h-14 fixed top-0 z-50">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-1 flex justify-between w-full items-center">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -31,13 +31,7 @@ export default function NavBar() {
             </DisclosureButton>
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-            <div className="flex flex-shrink-0 items-center">
-              <Link to={'/'}>
-                <FontAwesomeIcon 
-                  icon={faHome} 
-                  className='user-icon mx-3 text-white cursor-pointer hover:text-purple-500 hidden sm:block h-6' />
-              </Link>
-            </div>
+            
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4 mt-3">
 
@@ -56,54 +50,33 @@ export default function NavBar() {
                     {item.name}
                   </NavLink>
                 ))}
-
               </div>
             </div>
-          
           </div>
         </div>
-
-        <div className='flex'>
-          {/* <input type="text" placeholder='Buscar' className='input rounded-md'/> */}
-          
-          <Link to={'/shoppingCart'}>
-            <FontAwesomeIcon 
-              icon={faShoppingCart} 
-              className='mx-8 text-white cursor-pointer hover:text-purple-600 h-6 p-2' />
-
-          </Link>
-          
-          <Link to={'/login'}>
-            <FontAwesomeIcon 
-            icon={faUser} 
-            className='user-icon text-white cursor-pointer hover:text-purple-600  h-6 p-2' />
-          </Link>
-          
-        </div>
-
       </div>
 
       <DisclosurePanel className="sm:hidden absolute top-14 left-0 z-50 w-full bg-gray-800">
-  <div className="space-y-1 px-2 pb-3 pt-2">
-    {navigation.map((item) => (
-      <DisclosureButton
-        key={item.name}
-        as={NavLink}
-        to={item.href}
-        aria-current={item.current ? 'page' : undefined}
-        className={({ isActive }: { isActive: boolean }) => 
-          classNames(
-        isActive ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-        'block rounded-md px-3 py-2 text-base font-medium'
-          )
-        }
-      >
-        {item.name}
-      </DisclosureButton>
-    ))}
-  </div>
-</DisclosurePanel>
-<div id="progress"></div>
+        <div className="space-y-1 px-2 pb-3 pt-2">
+          {navigation.map((item) => (
+            <DisclosureButton
+              key={item.name}
+              as={NavLink}
+              to={item.href}
+              aria-current={item.current ? 'page' : undefined}
+              className={({ isActive }: { isActive: boolean }) => 
+                classNames(
+              isActive ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+              'block rounded-md px-3 py-2 text-base font-medium'
+                )
+              }
+            >
+              {item.name}
+            </DisclosureButton>
+          ))}
+        </div>
+      </DisclosurePanel>
+      <div id="progress"></div>
 
     </Disclosure>
   )
