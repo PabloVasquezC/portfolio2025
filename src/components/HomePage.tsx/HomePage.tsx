@@ -11,7 +11,7 @@ export default function HomePage() {
     <div className="scroll-smooth">
       <NavBar />
       <div id="inicio" className="h-screen flex justify-center items-center">
-        <h1 className="text-2xl">Hola, Soy Pablo Vásquez</h1>
+        <h1 className="text-3xl">Hola, Soy Pablo Vásquez</h1>
       </div>
       <section id="about" className="py-16">
         <AboutSection />
