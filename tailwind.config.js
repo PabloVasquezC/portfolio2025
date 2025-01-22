@@ -2,10 +2,12 @@
 // Ensure consistent casing in import paths
 export default {
   content: [
-    './src/**/*.{html,js,ts,jsx,tsx}',
+    './src/**/*.{html,js,ts,jsx,tsx}', 
   ],
   theme: {
-    extend: {},
+    extend: {
+      scrollBehavior: ['hover', 'focus'],
+    },
   },
   plugins: [],
 }

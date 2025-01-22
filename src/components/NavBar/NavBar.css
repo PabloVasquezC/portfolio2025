@@ -1,0 +1,4 @@
+.bg-blur-white {
+    
+    backdrop-filter: blur(3px);
+}
