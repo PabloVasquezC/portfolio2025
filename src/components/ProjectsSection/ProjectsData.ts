@@ -1,34 +1,22 @@
 import Project from "./ProjectCard/Project";
+import CoffeeFamily from "../../../assets/coffee-family.png";
+import GameWorld from "../../../assets/gameworld.png";
 
 const ProjectsData: Project[] = [
     {
-        title: "Project 1",
+        title: "Coffee Family",
         description: "Description 1",
-        image: "https://via.placeholder.com/150",
-        url: "https://www.google.com",
-        github: "https://www.github.com"
+        image: CoffeeFamily,
+        url: "https://familycoffee.vercel.app/",
+        github: "https://github.com/PabloVasquezC/coffee-family-back"
     },
     {
-        title: "Project 2",
+        title: "Gameworld",
         description: "Description 2",
-        image: "https://via.placeholder.com/150",
-        url: "https://www.google.com",
+        image: GameWorld,
+        url: "https://gameworldv2.vercel.app/",
         github: "https://www.github.com"
-    },
-    {
-        title: "Project 3",
-        description: "Description 3",
-        image: "https://via.placeholder.com/150",
-        url: "https://www.google.com",
-        github: "https://www.github.com"
-    },
-    {
-        title: "Project 4",
-        description: "Description 4",
-        image: "https://via.placeholder.com/150",
-        url: "https://www.google.com",
-        github: "https://www.github.com"
-    },
+    }
 ];
 
 export default ProjectsData;
