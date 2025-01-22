@@ -1,14 +1,24 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import HomePage from './components/HomePage.tsx/HomePage';
+import NavBar from './components/NavBar/NavBar';
+import ProjectsPage from './components/ProjectsPage/ProjectsPage';
+import EducationPage from './components/Education/Education';
 
 function App() {
   return (
-    <Router>
+    <>
+     <Router>
+     <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/education" element={<EducationPage />} />
+
+
       </Routes>
     </Router>
+    </>
   );
 }
 
