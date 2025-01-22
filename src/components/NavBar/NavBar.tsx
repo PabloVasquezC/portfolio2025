@@ -1,16 +1,16 @@
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { Link, NavLink } from 'react-router-dom';
-import './NavBar.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome } from '@fortawesome/free-solid-svg-icons'
+import {  NavLink } from 'react-router-dom';
+import './NavBar.css';
+
 
 
 const navigation = [
-  { name: 'Inicio', href: '/', current: true },
-  { name: 'Proyectos', href: '/projects', current: false },
-  { name: 'Formación', href: '/education', current: false },
-]
+  { name: 'Inicio', href: '#inicio', current: true },
+  { name: 'Proyectos', href: '#proyectos', current: false },
+  { name: 'Formación', href: '#formacion', current: false },
+];
+
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
@@ -18,7 +18,7 @@ function classNames(...classes: string[]) {
 
 export default function NavBar() {
   return (
-    <Disclosure as="nav" className="w-full navbar flex h-14 fixed top-0 z-50">
+    <Disclosure as="nav" className="w-full navbar flex h-14 fixed top-0 z-50 bg-blur-white">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-1 flex justify-between w-full items-center">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -36,20 +36,18 @@ export default function NavBar() {
               <div className="flex space-x-4 mt-3">
 
                 {navigation.map((item) => (
-                  <NavLink
-                    key={item.name}
-                    to={item.href}
-                    className={({ isActive }) => 
-                      classNames(
-                        isActive ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                        'rounded-md px-3 py-2 text-sm font-medium'
-                      )
-                    }
-                    aria-current={item.current ? 'page' : undefined}
-                  >
-                    {item.name}
-                  </NavLink>
-                ))}
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className={classNames(
+                    'text-black hover:bg-gray-700 hover:text-white',
+                    'rounded-md px-3 py-2 text-sm font-medium'
+                  )}
+                >
+                  {item.name}
+                </a>
+              ))}
+
               </div>
             </div>
           </div>
