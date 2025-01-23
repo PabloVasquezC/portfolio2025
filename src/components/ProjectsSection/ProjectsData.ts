@@ -2,6 +2,7 @@ import Project from "./ProjectCard/Project";
 import CoffeeFamily from "../../../assets/coffee-family.png";
 import GameWorld from "../../../assets/gameworld.png";
 import ScrabbeMath from "../../../assets/scrabblemath.png";
+import DjangoLibrary from "../../../assets/djangoLibrary.png";
 
 
 
@@ -27,12 +28,6 @@ const ProjectsData: Project[] = [
         image: ScrabbeMath,
         url: "https://scrabblemath.netlify.app/",
         github: "https://www.github.com"
-    }
-        title: "ScrabbleMath",
-        description: "ScrabbleMath es un juego educativo que combina el juego de Scrabble con la matemática, donde el jugador debe formar ecuaciones matemáticas con las fichas de Scrabble.",
-        image: ScrabbleMath,
-        url: "https://scrabblemath.netlify.app/",
-        github: ""
     },
     {
         title: "Libreria El Poeta",
