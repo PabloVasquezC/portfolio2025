@@ -2,7 +2,7 @@ import Project from "./ProjectCard/Project";
 import CoffeeFamily from "../../../assets/coffee-family.png";
 import GameWorld from "../../../assets/gameworld.png";
 import ScrabbleMath from "../../../assets/scrabbleMath.png";
-import DjangoLibrary from "../../../assets/djangolibrary.png";
+import DjangoLibrary from "../../../assets/djangoLibrary.png";
 
 const ProjectsData: Project[] = [
     {
