@@ -21,8 +21,8 @@ export default function AboutSection() {
 
     return (
             <div className='flex-col justify-center items-center h-screen'>
-                <h1 className='text-3xl text-center'>Sobre mi</h1>
-                <div className="text-center my-10">"Soy Desarrollador <span className="transition">{mySkill}</span>"</div>
+                {/* <h1 className='text-3xl text-center'>Sobre mi</h1> */}
+                <div className="text-center my-10 text-3xl">"Soy Desarrollador <span className="transition">{mySkill}</span>"</div>
             </div>
     )
 }

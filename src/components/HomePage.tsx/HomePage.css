@@ -1,3 +1,8 @@
-#scroll {
+.scroll-smooth {
     scroll-behavior: smooth;
+    background-image: url('../../../assets/thomas-lefebvre-mT1uxKaegSQ-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }

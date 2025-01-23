@@ -9,7 +9,7 @@ export default function ProjectCard( {project}: {project: Project} ) {
 
             <h1 className="text-2xl my-2 text-center">{project.title}</h1>
 
-            <div className="flex-col py-4 justify-center items-center rounded-xl bg-gray-800 hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-2 ">
+            <div className="flex-col py-4 justify-center items-center rounded-xl bg-gray-800 hover:shadow-xl cursor-pointer shadow black transition duration-300 ease-in-out transform hover:-translate-y-2 ">
                 <img src={project.image} alt="project-image" />
                 <p className="text-gray-300 m-2 text-center">{project.description}</p>
                 <div className="flex justify-around w-full">
