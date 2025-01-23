@@ -2,7 +2,9 @@ import Project from "./ProjectCard/Project";
 import CoffeeFamily from "../../../assets/coffee-family.png";
 import GameWorld from "../../../assets/gameworld.png";
 import ScrabbeMath from "../../../assets/scrabblemath.png";
-import DjangoLibrary from "../../../assets/djangoLibrary.png";
+
+
+
 
 const ProjectsData: Project[] = [
     {
@@ -14,7 +16,7 @@ const ProjectsData: Project[] = [
     },
     {
         title: "Gameworld",
-        description: "Plataforma de juegos en línea, con funcionalidades de registro de usuarios, selección de juegos y ranking de jugadores.",
+        description: "Pagina web de venta de videojuegos, con la posibilidad de ver los juegos más populares, ver los detalles de un juego y más.",
         image: GameWorld,
         url: "https://gameworldv2.vercel.app/",
         github: "https://www.github.com"
@@ -25,13 +27,19 @@ const ProjectsData: Project[] = [
         image: ScrabbeMath,
         url: "https://scrabblemath.netlify.app/",
         github: "https://www.github.com"
+    }
+        title: "ScrabbleMath",
+        description: "ScrabbleMath es un juego educativo que combina el juego de Scrabble con la matemática, donde el jugador debe formar ecuaciones matemáticas con las fichas de Scrabble.",
+        image: ScrabbleMath,
+        url: "https://scrabblemath.netlify.app/",
+        github: ""
     },
     {
-        title: "Django Library",
-        description: "Aplicación web para la gestión de una biblioteca, con funcionalidades de administración de libros, autores y préstamos.",
+        title: "Libreria El Poeta",
+        description: "Proyecto de una biblioteca virtual, donde se pueden ver los libros disponibles, ver los detalles de un libro y más.",
         image: DjangoLibrary,
         url: "https://elpoetalibrary-ayfjfdashtdeepcd.canadacentral-01.azurewebsites.net/",
-        github: ""
+        github: "https://github.com/PabloVasquezC/DjangoLibrary"
     }
 
 ];
