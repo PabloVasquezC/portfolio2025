@@ -12,7 +12,7 @@ export default function HomePage() {
       <NavBar />
       <div id="inicio" className="h-screen flex justify-center items-center">
         <h1 className="text-3xl ">¡Hola, Soy Pablo Vásquez!</h1>
-        <a href="../../../assets/CV_PabloVasquez.pdf" 
+        <a href="https://drive.google.com/file/d/1sQ8ZysjTchqX1BZsdR3QUpONUBIUfRO6/view?usp=sharing" 
           target="_blank"
           className="border-2 border-black rounded-md p-2 ml-4 hover:bg-black hover:text-white">
           <button >Descargar CV</button>
