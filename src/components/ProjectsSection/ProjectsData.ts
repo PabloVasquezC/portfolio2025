@@ -2,6 +2,7 @@ import Project from "./ProjectCard/Project";
 import CoffeeFamily from "../../../assets/coffee-family.png";
 import GameWorld from "../../../assets/gameworld.png";
 import ScrabbleMath from "../../../assets/scrabbleMath.png";
+import DjangoLibrary from "../../../assets/django-library.png";
 
 const ProjectsData: Project[] = [
     {
@@ -24,6 +25,13 @@ const ProjectsData: Project[] = [
         image: ScrabbleMath,
         url: "https://scrabblemath.netlify.app/",
         github: ""
+    },
+    {
+        title: "Django Library",
+        description: "Proyecto de una biblioteca virtual, donde se pueden ver los libros disponibles, ver los detalles de un libro y más.",
+        image: DjangoLibrary,
+        url: "https://elpoetalibrary-ayfjfdashtdeepcd.canadacentral-01.azurewebsites.net/",
+        github: "https://github.com/PabloVasquezC/DjangoLibrary"
     }
 
 ];
