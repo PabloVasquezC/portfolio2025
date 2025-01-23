@@ -5,4 +5,14 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    height: 2800px; 
+}
+
+#inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
 }
