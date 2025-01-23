@@ -30,7 +30,7 @@ export default function NavBar() {
               key={item.name}
               href={item.href}
               className={classNames(
-                'text-gray-600 hover:text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium'
+                'text-gray-900 hover:text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium'
               )}
             >
               {item.name}
