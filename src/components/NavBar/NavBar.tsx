@@ -24,7 +24,7 @@ export default function NavBar() {
           </DisclosureButton>
         </div>
 
-        <div className="hidden sm:flex space-x-4 transition-all bg-red-400 hover:bg-gray-900 ">
+        <div className="hidden sm:flex space-x-4 transition-all  ">
           {navigation.map((item) => (
             <a
               key={item.name}
