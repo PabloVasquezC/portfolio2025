@@ -8,18 +8,15 @@ import './HomePage.css';
 
 export default function HomePage() {
   return (
-    <div className="scroll-smooth">
+    <>
       <NavBar />
-      <div id="inicio" className="">
+      <div className="container-fluid home">
         <AboutSection />
-      </div>
-      <section id="proyectos" className="py-16">
         <ProjectsSection />
-      </section>
-      <section id="formacion" className="">
         <EducationSection />
-      </section>
-    </div>
+      </div>
+        
+    </>
   );
 }
 

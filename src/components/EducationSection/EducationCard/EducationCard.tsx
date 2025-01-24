@@ -4,7 +4,7 @@ import Education from "../Education";
 
 export default function ProjectCard( {education}: {education: Education} ) {
     return (
-        <div className="flex m-10 justify-center items-center rounded-xl bg-gray-800 hover:shadow-xl cursor-pointer shadow black transition duration-300 ease-in-out transform hover:-translate-y-2 ">
+        <div className="flex-col justify-center items-center  w-96 m-4 bg-gray-800 rounded-xl hover:shadow-xl cursor-pointer shadow black transition duration-300 ease-in-out transform hover:-translate-y-2 ">
             <img src={education.image} alt="project-image" />
             <div className="flex-col justify-start items-start p-4">
                 <h1 className="text-2xl text-gray-300 my-2 text-left">{education.degree}</h1>
