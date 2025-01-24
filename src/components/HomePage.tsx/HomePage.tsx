@@ -11,9 +11,15 @@ export default function HomePage() {
     <>
       <NavBar />
       <div className="container-fluid home">
-        <AboutSection />
-        <ProjectsSection />
-        <EducationSection />
+        <div id="inicio">
+          <AboutSection/>
+        </div>
+        <div id="proyectos">
+          <ProjectsSection />
+        </div>
+        <div id="formacion">
+          <EducationSection />
+        </div>
       </div>
         
     </>
