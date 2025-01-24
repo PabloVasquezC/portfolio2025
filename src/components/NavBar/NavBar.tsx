@@ -12,7 +12,7 @@ const navigation = [
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ');
-}
+} 
 
 export default function NavBar() {
   return (
@@ -24,13 +24,13 @@ export default function NavBar() {
           </DisclosureButton>
         </div>
 
-        <div className="hidden sm:flex space-x-4">
+        <div className="hidden sm:flex space-x-4 transition-all bg-red-400 hover:bg-gray-900 ">
           {navigation.map((item) => (
             <a
               key={item.name}
               href={item.href}
               className={classNames(
-                'text-gray-900 hover:text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium'
+                ' transition-all text-gray-900 hover:text-white hover:bg-gray-900 px-3 py-2 rounded-md text-sm font-medium'
               )}
             >
               {item.name}
@@ -39,13 +39,13 @@ export default function NavBar() {
         </div>
       </div>
 
-      <DisclosurePanel className="sm:hidden bg-blur-white">
-        <div className="space-y-1 px-2 pt-2 pb-3">
+      <DisclosurePanel className="sm:hidden bg-blur-white ">
+        <div className="space-y-1 pl-2 pt-2 pb-3 w-[100vw] mx-3">
           {navigation.map((item) => (
             <a
               key={item.name}
               href={item.href}
-              className="block text-gray-600 hover:text-white hover:bg-gray-700 px-3 py-2 rounded-md text-base font-medium"
+              className="transition-all block text-gray-900 hover:text-white hover:bg-gray-900 pl-3 py-2 rounded-md text-base font-medium"
             >
               {item.name}
             </a>
