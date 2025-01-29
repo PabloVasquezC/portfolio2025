@@ -1,8 +1,8 @@
 import AboutSection from "../About/AboutSection";
-import NavBar from "../NavBar/NavBar";;
+import NavBar from "../NavBar/NavBar";
 import ProjectsSection from "../ProjectsSection/ProjectsSection";
 import './HomePage.css';
-import SplashCursor from '../SplashCursor/SplashCursor.jsx';
+import SplashCursor from '../SplashCursor/SplashCursor';
 
 
 
