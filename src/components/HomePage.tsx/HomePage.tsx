@@ -1,14 +1,16 @@
 import AboutSection from "../About/AboutSection";
-import EducationSection from "../EducationSection/EducationSection";
 import NavBar from "../NavBar/NavBar";;
 import ProjectsSection from "../ProjectsSection/ProjectsSection";
 import './HomePage.css';
+import SplashCursor from '../SplashCursor/SplashCursor.jsx';
+
 
 
 
 export default function HomePage() {
   return (
     <>
+      <SplashCursor />
       <NavBar />
       <div className="container-fluid home">
         <div id="inicio">
@@ -18,7 +20,7 @@ export default function HomePage() {
           <ProjectsSection />
         </div>
         <div id="formacion">
-          <EducationSection />
+          {/* <EducationSection /> */}
         </div>
       </div>
         
