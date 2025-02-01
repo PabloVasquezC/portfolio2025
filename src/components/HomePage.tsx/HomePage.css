@@ -1,6 +1,14 @@
-.scroll-smooth {
+
+    
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: auto;
+    align-items: center;
     scroll-behavior: smooth;
-    background-image: url('../../../assets/thomas-lefebvre-mT1uxKaegSQ-unsplash.jpg');
+    background-image: url('../../../assets/matt-gross-9aCkSl6YcXg-unsplash.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
