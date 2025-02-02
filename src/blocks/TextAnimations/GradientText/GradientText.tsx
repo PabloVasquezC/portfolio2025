@@ -4,6 +4,7 @@
 	01-02-2025
 */
 
+import { ReactNode } from "react";
 
 interface GradientTextProps {
   children: ReactNode;
