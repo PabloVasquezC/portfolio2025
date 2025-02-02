@@ -1,4 +1,4 @@
-import HomePage from "./components/HomePage.tsx/HomePage";
+import HomePage from "./components/myOwnComponents/HomePage.tsx/HomePage";
 
 
 function App() {

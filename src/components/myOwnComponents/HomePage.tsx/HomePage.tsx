@@ -2,7 +2,7 @@ import { useState } from "react";
 import AboutSection from "../About/AboutSection";
 import NavBar from "../NavBar/NavBar";
 import ProjectsSection from "../ProjectsSection/ProjectsSection";
-import SplashCursor from '../SplashCursor/SplashCursor';
+import SplashCursor from '../../reactBitsComponents/SplashCursor/SplashCursor';
 import './HomePage.css';
 
 export default function HomePage() {

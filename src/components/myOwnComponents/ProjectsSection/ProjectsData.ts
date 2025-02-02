@@ -1,8 +1,8 @@
 import Project from "./ProjectCard/Project";
-import CoffeeFamily from "../../../assets/coffee-family.png";
-import GameWorld from "../../../assets/gameworld.png";
-import ScrabbeMath from "../../../assets/scrabblemath.png";
-import DjangoLibrary from "../../../assets/djangoLibrary.png";
+import CoffeeFamily from "../../../../assets/coffee-family.png";
+import GameWorld from "../../../../assets/gameworld.png";
+import ScrabbeMath from "../../../../assets/scrabblemath.png";
+import DjangoLibrary from "../../../../assets/djangoLibrary.png";
 
 
 

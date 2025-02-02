@@ -20,7 +20,7 @@ export default function NavBar({ darkMode, onDarkModeChange }: { darkMode: boole
   };
 
   return (
-    <Disclosure as="nav" className="w-full navbar justify-between flex h-14 fixed top-0 z-50 bg-blur-white">
+    <Disclosure as="nav" className="w-full navbar justify-between flex h-14 fixed top-0 z-[2000] bg-blur-white">
       <div className="max-w-7xl px- sm:px-6 lg:px-8 m-2 flex justify-between items-center">
         <div className="flex items-center">
           <DisclosureButton className="sm:hidden inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none">
