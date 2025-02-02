@@ -13,10 +13,10 @@
 
 /* Imagen por defecto (modo claro) */
 .home.light {
-    background-image: url('../../../assets/ivan-bandura-WhIff5iuW-E-unsplash.jpg');
+    background-image: url('../../../../assets/ivan-bandura-WhIff5iuW-E-unsplash.jpg');
 }
 
 /* Imagen para modo oscuro */
 .home.dark {
-    background-image: url('../../../assets/matt-gross-9aCkSl6YcXg-unsplash.jpg');
+    background-image: url('../../../../assets/matt-gross-9aCkSl6YcXg-unsplash.jpg');
 }
