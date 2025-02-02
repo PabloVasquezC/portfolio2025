@@ -3,7 +3,9 @@ import NavBar from "../NavBar/NavBar";
 import ProjectsSection from "../ProjectsSection/ProjectsSection";
 import './HomePage.css';
 import SplashCursor from '../SplashCursor/SplashCursor';
-import Squares from "../Squares/Squares";
+
+
+
 
 
 
@@ -11,11 +13,9 @@ import Squares from "../Squares/Squares";
 export default function HomePage() {
   return (
     <>
-     
       <SplashCursor />
       <NavBar />
       <div className="container-fluid home">
-        
         <div id="inicio">
           <AboutSection/>
         </div>
@@ -23,7 +23,6 @@ export default function HomePage() {
           <ProjectsSection />
         </div>
         <div id="formacion">
-          {/* <EducationSection /> */}
         </div>
       </div>
         

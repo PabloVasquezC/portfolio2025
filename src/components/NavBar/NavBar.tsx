@@ -3,7 +3,7 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react
 import { Bars3Icon } from '@heroicons/react/24/outline';
 import './NavBar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMoon } from '@fortawesome/free-regular-svg-icons';
+import { faSun } from '@fortawesome/free-regular-svg-icons';
 import { useState } from 'react';
 
 
@@ -56,7 +56,9 @@ export default function NavBar() {
         </div>
       </div>
       <button onClick={handleDarkMode} className='flex items-center justify-center'>
-        <FontAwesomeIcon icon={faMoon} className='h-6 m-4 hover:scale-125 transition-all duration-100 text-white'/>
+        {/* <FontAwesomeIcon icon={faMoon} className='h-6 m-4 hover:scale-125 transition-all duration-100 text-white'/> */}
+        <FontAwesomeIcon icon={faSun} className='h-6 m-4 hover:scale-125 transition-all duration-100 text-white'/>
+
       </button>
       
       <DisclosurePanel className="sm:hidden bg-blur-white ">
