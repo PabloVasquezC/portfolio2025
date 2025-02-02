@@ -1,6 +1,3 @@
-
-    
-
 .home {
     display: flex;
     flex-direction: column;
@@ -8,9 +5,18 @@
     height: auto;
     align-items: center;
     scroll-behavior: smooth;
-    background-image: url('../../../assets/matt-gross-9aCkSl6YcXg-unsplash.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+}
+
+/* Imagen por defecto (modo claro) */
+.home.light {
+    background-image: url('../../../assets/ivan-bandura-WhIff5iuW-E-unsplash.jpg');
+}
+
+/* Imagen para modo oscuro */
+.home.dark {
+    background-image: url('../../../assets/matt-gross-9aCkSl6YcXg-unsplash.jpg');
 }

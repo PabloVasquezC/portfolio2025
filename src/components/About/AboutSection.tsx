@@ -10,7 +10,6 @@ export default function AboutSection() {
     const [isTitleVisible, setIsTitleVisible] = useState(false);
     const [isNameVisible, setIsNameVisible] = useState(false);
     const [isSkillVisible, setIsSkillVisible] = useState(false);
-    const [isButtonVisible, setIsButtonVisible] = useState(false);
 
     useEffect(() => {
         let index = 0;
@@ -30,7 +29,6 @@ export default function AboutSection() {
             setTimeout(() => setIsTitleVisible(true), 300),
             setTimeout(() => setIsNameVisible(true), 600),
             setTimeout(() => setIsSkillVisible(true), 900),
-            setTimeout(() => setIsButtonVisible(true), 1200),
         ];
 
         return () => {
@@ -72,12 +70,12 @@ export default function AboutSection() {
                         isSkillVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
                     }`}
                 >
-                    <DecryptedText text="Soy un desarrollador " characters="!@#$%XYZ!@#$%XYZ!@#$%XYZ!@#$%XYZ" speed={10} animateOn="view" />
+                    <DecryptedText text="Soy un desarrollador " characters="!@#$%XYZ!@#$%XYZ!@#$%XYZ!@#$%XYZ" speed={80} animateOn="view" />
                     <GradientText>
                         <DecryptedText
                             text={mySkill}
                             characters="!@#$%XYZ"
-                            speed={150}
+                            speed={20}
                             animateOn="view"
                         />
                     </GradientText>
@@ -86,7 +84,7 @@ export default function AboutSection() {
             )}
 
             {/** Similar para el botón */}
-            {isButtonVisible && (
+            {/* {isButtonVisible && (
                 <button
                     className={`b-gradient-to-r  text-white px-4 py-2 rounded-md transition-all duration-1000 ${
                         isButtonVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
@@ -104,7 +102,7 @@ export default function AboutSection() {
                         />
                     </GradientText>
                 </button>
-            )}
+            )} */}
 
             
         </div>
