@@ -41,8 +41,9 @@ export default function AboutSection() {
     }, []);
 
     return (
-        <div className="mt-11 flex flex-col md:flex-row md:mt-0 justify-around items-center h-screen w-[90vw]">
+        <div className="mt-11 flex flex-col md:flex-row md:mt-0 justify-around items-center h-screen w-[90vw] relative">
             <PixelTransition
+                // pixelColor='#000'
                 firstContent={
                     <img
                     src={FotoMia}
@@ -58,11 +59,10 @@ export default function AboutSection() {
                     />
                 }
                 gridSize={12}
-                pixelColor='#ffffff'
                 animationStepDuration={0.4}
                 className="custom-pixel-card"
             />            
-            <div>
+            <div className="flex flex-col items-center md:items-center min-h-[200px] w-2/3">
                 <h1
                 className={`text-5xl text-center transition-all duration-1000 text-white ${
                     isTitleVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
