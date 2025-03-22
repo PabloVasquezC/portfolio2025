@@ -44,6 +44,7 @@ export default function AboutSection() {
         <div className="mt-11 flex flex-col md:flex-row md:mt-0 justify-around items-center h-screen w-[90vw] relative">
             <PixelTransition
                 // pixelColor='#000'
+                className="w-30 h-30 md:w-80 md:h-80"
                 firstContent={
                     <img
                     src={FotoMia}
@@ -60,7 +61,6 @@ export default function AboutSection() {
                 }
                 gridSize={12}
                 animationStepDuration={0.4}
-                className="custom-pixel-card"
             />            
             <div className="flex flex-col items-center md:items-center min-h-[200px] w-2/3">
                 <h1
