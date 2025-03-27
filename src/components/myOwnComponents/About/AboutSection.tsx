@@ -62,7 +62,7 @@ export default function AboutSection() {
                 gridSize={12}
                 animationStepDuration={0.4}
             />            
-            <div className="flex flex-col items-center md:items-center min-h-[200px] w-2/3">
+            <div className="flex flex-col items-center md:items-center min-h-[200px] w-2/3 m-6">
                 <h1
                 className={`text-5xl text-center transition-all duration-1000 text-white ${
                     isTitleVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
@@ -107,28 +107,28 @@ export default function AboutSection() {
                         
                     </p>
                 )}
-                </div>
-
-            {/** Similar para el botón */}
-            {/* {isButtonVisible && (
-                <button
-                    className={`b-gradient-to-r  text-white px-4 py-2 rounded-md transition-all duration-1000 ${
-                        isButtonVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
-                    }`}
-                >
+                <a href="https://drive.google.com/file/d/1sQ8ZysjTchqX1BZsdR3QUpONUBIUfRO6/view?usp=sharing" target="_blank" rel="noopener noreferrer"
+                    >
                     <GradientText
-                        showBorder={true}>
+                        showBorder={true}
+                        colors={["#ffaa40", "#9c40ff", "#ffaa40"]}
+                        className="text-2xl text-center mt-5 px-4 py-2 rounded-[1.25rem] bg-black hover:bg-opacity-50 transition duration-300"
+                        >
                         
                         <DecryptedText
-                            text="¡Conóceme más!"
+                            text="¡Ver CV!"
                             characters="!@#$%XYZ"
                             speed={150}
                             animateOn="view"
                             
                         />
                     </GradientText>
-                </button>
-            )} */}
+                </a>
+                </div>
+
+            
+                
+           
 
             
         </div>
