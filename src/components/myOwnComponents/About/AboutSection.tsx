@@ -1,9 +1,9 @@
 import { useEffect, useMemo, useState } from "react";
 import GradientText from "../../reactBitsComponents/GradientText/GradientText";
 import DecryptedText from "../../reactBitsComponents/DecryptedText/DecryptedText";
-import PixelTransition from "../../reactBitsComponents/PixelTransition/PixelTransition";
 import FotoMia from "../../../../assets/fotoMia.png";
-import FotoMia2 from "../../../../assets/fotoMia2.jpeg";
+import ProfileCard from "../../reactBitsComponents/ProfileCard/ProfileCard";
+import FotoBgLess from "../../../../assets/fotoMia-removebg-preview.png";
 
 
 export default function AboutSection() {
@@ -42,7 +42,7 @@ export default function AboutSection() {
 
     return (
         <div className="mt-11 flex flex-col md:flex-row md:mt-0 justify-around items-center h-screen w-[90vw] relative">
-            <PixelTransition
+            {/* <PixelTransition
                 // pixelColor='#000'
                 className="w-30 h-30 md:w-80 md:h-80"
                 firstContent={
@@ -61,7 +61,28 @@ export default function AboutSection() {
                 }
                 gridSize={12}
                 animationStepDuration={0.4}
-            />            
+            />             */}
+            <ProfileCard
+
+  name="Javi A. Torres"
+
+  title="Software Engineer"
+
+  handle="javicodes"
+
+  status="Online"
+
+  contactText="Contact Me"
+
+  avatarUrl={FotoBgLess}
+
+  showUserInfo={true}
+
+  enableTilt={true}
+
+  onContactClick={() => console.log('Contact clicked')}
+
+/>
             <div className="flex flex-col items-center md:items-center min-h-[200px] w-2/3 m-6">
                 <h1
                 className={`text-5xl text-center transition-all duration-1000 text-white ${
