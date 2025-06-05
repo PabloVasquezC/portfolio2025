@@ -63,11 +63,11 @@ export default function AboutSection() {
             />             */}
             <ProfileCard
 
-  name="Javi A. Torres"
+  name="Pablo Vásquez"
 
   title="Software Engineer"
 
-  handle="javicodes"
+  handle="PabloVasquezDev"
 
   status="Online"
 
