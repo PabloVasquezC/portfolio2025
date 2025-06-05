@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import GradientText from "../../reactBitsComponents/GradientText/GradientText";
 import DecryptedText from "../../reactBitsComponents/DecryptedText/DecryptedText";
-import FotoMia from "../../../../assets/fotoMia.png";
 import ProfileCard from "../../reactBitsComponents/ProfileCard/ProfileCard";
 import FotoBgLess from "../../../../assets/fotoMia-removebg-preview.png";
 
