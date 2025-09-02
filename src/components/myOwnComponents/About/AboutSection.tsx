@@ -127,7 +127,7 @@ export default function AboutSection() {
                         
                     </p>
                 )}
-                <a href="https://drive.google.com/file/d/1trAwobzQbMdGU1PdUDgfh67wuNFkAdHm/view?usp=sharing" target="_blank" rel="noopener noreferrer"
+                <a href="https://drive.google.com/file/d/1tkWrcUo0n1GHsSFaJSQX3tcPuIOA3nAS/view?usp=sharing" target="_blank" rel="noopener noreferrer"
                     >
                     <GradientText
                         showBorder={true}
